@@ -5,9 +5,9 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github invrtd_h/airi))
 
-(authors "Author Name <author@example.com>")
+(authors "Hyegeun Song <hgssong5648@naver.com>")
 
 (maintainers "Maintainer Name <maintainer@example.com>")
 
@@ -19,7 +19,7 @@
  (name airi)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends (ocaml (>= 5.4.0)) async (ocamlformat :dev) (ocaml-lsp-server :dev))
+ (depends (ocaml (>= 5.4.0)) (core (>= 0.17.0)) cohttp-lwt-unix lwt_ssl (climate (>= 0.9.0)) (ocamlformat :dev) (ocaml-lsp-server :dev))
  (tags
   ("add topics" "to describe" your project)))
 

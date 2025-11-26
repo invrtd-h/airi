@@ -1,4 +1,6 @@
 (executable
  (public_name airi)
  (name main)
- (libraries airi))
+ (preprocess
+  (pps ppx_jane))
+ (libraries airi climate core cohttp-lwt-unix))
