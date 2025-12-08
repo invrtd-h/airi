@@ -6,7 +6,7 @@ let base_uri_string =
 
 let uri = Uri.of_string base_uri_string
 
-let get uri =
+let get_string uri =
   let get uri =
     let open Lwt.Syntax in
     let* _resp, body = Cohttp_lwt_unix.Client.get uri in
@@ -16,4 +16,4 @@ let get uri =
   Lwt_main.run (get uri)
 ;;
 
-let () = Stdio.print_endline (get uri)
+let () = Stdio.print_endline (get_string uri)

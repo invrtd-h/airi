@@ -19,7 +19,15 @@
  (name airi)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends (ocaml (>= 5.4.0)) (core (>= 0.17.0)) cohttp-lwt-unix lwt_ssl (climate (>= 0.9.0)) (ocamlformat :dev) (ocaml-lsp-server :dev))
+ (depends
+  (ocaml (>= 5.4.0))
+  (core (>= 0.17.0))
+  cohttp-lwt-unix
+  lwt_ssl
+  lambdasoup
+  (climate (>= 0.9.0))
+  (ocamlformat :dev)           `
+  (ocaml-lsp-server :dev))
  (tags
   ("add topics" "to describe" your project)))
 
